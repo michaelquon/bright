@@ -1,0 +1,21 @@
+#reg, #login{
+display: inline-block;
+vertical-align: top;
+}
+#login{
+    margin-left: 30px;
+}
+#idea{
+    display: inline-block;
+    vertical-align: top;
+}
+#welcome, .logout, .bright{
+    display: inline-block;
+    vertical-align: top;
+}
+.bright{
+    padding-right: 40px;
+}
+.logout, .bright{
+    float: right;
+}

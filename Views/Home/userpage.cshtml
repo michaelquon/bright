@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+      
+     
+     <h2 class="logout">
+        <a href="logout">Logout</a>
+    </h2>
+    <h2 class="bright">
+         <a href="/Dashboard">Bright Idea</a>
+     </h2>
+    <h1>Name: @ViewBag.thisUser.name</h1>
+    <h1>Alias: @ViewBag.thisUser.alias</h1>
+    <h1>Email: @ViewBag.thisUser.email</h1>
+    <hr>
+    <p>Total number of posts: @ViewBag.Liking</p>
+    <p>Total number of likes: @ViewBag.Liking</p>
+</body>
+</html>

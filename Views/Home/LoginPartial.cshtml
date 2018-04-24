@@ -1,0 +1,26 @@
+     <div>
+        <h2>Login</h2>
+    </div>
+    @using bright.Models
+    @model bright.Models.LoginViewModel
+    <div id="login-wrapper">
+        
+        <form asp-controller="Home" asp-action="loginUser" method="post">
+            <table>
+                <tr>
+                    <td><label asp-for="logEmail"></label></td>
+                    <td><input class="form-control" asp-for="logEmail"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="logEmail"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="logPassword"></label></td>
+                    <td><input class="form-control" asp-for="logPassword"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="logPassword"></span></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-primary">Log In</button></td>
+                    <td>&nbsp;&nbsp;<span>@ViewBag.error</span></td>
+                </tr>
+            </table>
+        </form>
+    </div>

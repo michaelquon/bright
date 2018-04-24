@@ -1,0 +1,40 @@
+    <div>
+        <h2>Register</h2>
+    </div>
+    @using bright.Models
+    @model bright.Models.UserViewModel
+    <div id="form-wrapper">
+        <form asp-controller="Home" asp-action="addUser" method="post">
+            <table>
+                <tr>
+                    <td><label asp-for="name"></label></td>
+                    <td><input class="form-control" asp-for="name"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="name"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="alias"></label></td>
+                    <td><input class="form-control" asp-for="alias"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="alias"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="email"></label></td>
+                    <td><input class="form-control" asp-for="email"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="email"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="password"></label></td>
+                    <td><input type="password" class="form-control" asp-for="password"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="password"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="confirm"></label></td>
+                    <td><input type="password" class="form-control" asp-for="confirm"></td>
+                    <td>&nbsp;&nbsp;<span asp-validation-for="confirm"></span></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-primary">Register</button></td>
+            
+                </tr>
+            </table>
+        </form>
+    </div>
